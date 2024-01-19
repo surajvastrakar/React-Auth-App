@@ -7,7 +7,6 @@ const authSlice = createSlice({
   initialState: initialAuthState,
   reducers: {
     login(state, actions) {
-      console.log(actions, "actions log from store slice");
       state.isAuthenticated = true;
       state.email = actions.payload.email;
       state.password = actions.payload.password;

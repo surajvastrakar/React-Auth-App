@@ -12,7 +12,6 @@ const Auth = () => {
   const loginHandler = (event) => {
     event.preventDefault();
     dispatch(authActions.login({ email, password }));
-    console.log(email, password, "log from auth compoents");
     setEmail("");
     setPassword("");
   };
